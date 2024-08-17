@@ -1,0 +1,119 @@
+.home {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+.main {
+  width: 70%;
+  padding: 10px;
+}
+.aside {
+  width: 30%;
+}
+.home-aside {
+  height: 100vh;
+  border-left: 1px solid rgba(0, 0, 0, 0.075);
+  width: 100%;
+  padding: 10px;
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    font-weight: 600;
+  }
+}
+.aside-card {
+  height: 48px;
+  width: 342px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  &-img {
+    background-color: #765766;
+    background-size: cover;
+    border-radius: 4px;
+    display: block;
+    flex: 0 0 auto;
+    height: 28px;
+    margin-right: 8px;
+    width: 32px;
+  }
+  &-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--ds-text, #172b4d);
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+  &:hover {
+    background-color: #091e4224;
+  }
+}
+.project-card {
+  cursor: pointer;
+  background-color: #765766;
+  height: 96px;
+  width: 200px;
+  border-radius: 5px;
+  background-position: 50%;
+  background-size: cover;
+  color: #fff;
+  line-height: 20px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+.project-card:hover {
+  opacity: 0.9;
+}
+.event-card {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  border-radius: 5px;
+  height: 150px;
+  width: 115px;
+  border: 1px solid #172b4d;
+  cursor: pointer;
+  scale: 0.8;
+  &-header {
+    color: whitesmoke;
+    background-color: #172b4d;
+    height: 100px;
+    position: relative;
+    font-weight: 600;
+    &-day {
+      position: absolute;
+      top: 0;
+      left: 8px;
+      font-size: 20px;
+    }
+    &-date {
+      position: absolute;
+      bottom: 0;
+      right: 8px;
+      font-size: 40px;
+    }
+  }
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    &-title {
+      font-size: 20px;
+      color: #172b4d;
+      font-weight: 500;
+    }
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}

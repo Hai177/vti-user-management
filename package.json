@@ -1,0 +1,21 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run start --stream",
+    "dev": "lerna run dev --stream",
+    "prod": "lerna run start-prod --stream",
+    "test": "lerna run test --stream",
+    "format": "lerna run format",
+    "lint": "lerna run lint",
+    "prepare": "husky install",
+    "seed": "lerna run seed:run --scope=server"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lerna": "^8.0.1"
+  }
+}

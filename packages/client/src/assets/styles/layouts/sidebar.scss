@@ -1,0 +1,50 @@
+.sidebar {
+  width: 260px;
+  z-index: 10;
+  bottom: 0;
+  position: fixed;
+  top: 0;
+  padding-top: 70px !important;
+  background-color: #313a46;
+}
+
+.logo {
+  height: 70px;
+  width: 260px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  .logo-lg {
+    height: 32px;
+  }
+}
+
+.side-nav {
+  padding-left: 0;
+  list-style-type: none;
+  &-link {
+    display: block;
+    padding: 8px 24px;
+    font-size: 1.25rem;
+    position: relative;
+    transition: all 0.4s;
+    list-style: none;
+    color: #8391a2;
+    text-decoration: none;
+    &:hover,
+    &.active {
+      color: #bccee4;
+      background-color: #a5b5c926;
+    }
+  }
+
+  &-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #8391a2;
+    margin-block: 8px;
+  }
+}

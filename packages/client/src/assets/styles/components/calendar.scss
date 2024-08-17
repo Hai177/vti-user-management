@@ -1,0 +1,7 @@
+#calendar {
+  height: 100%;
+  & .fc {
+    overflow: auto;
+    height: 100%;
+  }
+}

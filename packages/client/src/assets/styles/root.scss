@@ -1,0 +1,38 @@
+@import-normalize;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+html {
+  font-size: 80%;
+}
+
+body {
+  background-color: #fafbfe;
+}
+
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.content-page {
+  margin-left: 260px;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.container-page {
+  height: calc(100vh - 60px);
+}
+
+@import './components/loading-overlay.scss';
+@import './components/calendar.scss';
+@import './layouts/sidebar.scss';
+@import './layouts/header.scss';
+@import './pages/team.scss';
+@import './pages/board.scss';
+@import './pages/home.scss';
